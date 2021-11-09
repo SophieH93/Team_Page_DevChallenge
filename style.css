@@ -57,7 +57,7 @@ img:hover {
     transform: scale(1.03)
 } 
 
- .photo__job {
+.photo__job {
     writing-mode: vertical-rl;
     margin: 0;
     padding: 0;
@@ -74,26 +74,56 @@ img:hover {
     margin-top: 45px;
 }
 
- .photo {
+.photo {
     display: flex;
+}
+
+.middle {
+    margin-top: 3rem;
  }
 
- .middle {
-    margin-top: 3rem;
-  }
-
-  .name {
+.name {
     margin-top: 7px;
     font-family: 'Poppins', sans-serif;
     font-size: 19.5px;
     font-weight: 700;
     text-align: left;
     padding-left: 60px;
-    color: #30CFD0;
-    
+    color: #30CFD0;    
 }
 
-  footer {
-    text-align: center;
-    color: #A9A9A9;
+footer {
+text-align: center;
+color: #A9A9A9;
+}
+
+  @media only screen and (max-width: 600px){
+    .container {   
+        margin-top: 20px;    
+        grid-template-columns: repeat(1, 1fr);  
+    }
+
+    .description h5 {
+        margin-top: 10px;
+    }
+
+    .images {       
+        grid-template-columns: repeat(2, 1fr);
+        column-gap:0;
+        margin-top: 50px;  
+     }
+
+     .photo__job {
+        right: 20px;
+        font-size: 11px;
+     }
+
+    .name {
+        font-size: 14px;
+     } 
+     
+     img {
+        margin-left: 30px;
+    }
+
   }
