@@ -118,12 +118,25 @@ color: #A9A9A9;
         font-size: 11px;
      }
 
-    .name {
-        font-size: 14px;
-     } 
-     
+    
      img {
         margin-left: 30px;
     }
+  }
 
+  @media only screen and (min-width: 600px) {
+    .photo__job {
+        right: 0;
+        font-size: 12px;
+     }
+
+    .name {
+    font-size: 15px;
+    } 
+
+.description p {
+    line-height: 16px;
+    
+}
+     
   }
